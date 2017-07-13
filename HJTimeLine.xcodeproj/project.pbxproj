@@ -15,6 +15,9 @@
 		D25260891F14DAF8002C8946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25260871F14DAF8002C8946 /* LaunchScreen.storyboard */; };
 		D25260941F14DAF8002C8946 /* HJTimeLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D25260931F14DAF8002C8946 /* HJTimeLineTests.m */; };
 		D252609F1F14DAF8002C8946 /* HJTimeLineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D252609E1F14DAF8002C8946 /* HJTimeLineUITests.m */; };
+		D25260AF1F14DB46002C8946 /* HJTimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D25260AE1F14DB46002C8946 /* HJTimeLineCell.m */; };
+		D25260B21F15EBCB002C8946 /* HJTimeLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D25260B11F15EBCB002C8946 /* HJTimeLineModel.m */; };
+		D25260B51F1619D2002C8946 /* HJTimeLineHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D25260B41F1619D2002C8946 /* HJTimeLineHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		D252609A1F14DAF8002C8946 /* HJTimeLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJTimeLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D252609E1F14DAF8002C8946 /* HJTimeLineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJTimeLineUITests.m; sourceTree = "<group>"; };
 		D25260A01F14DAF8002C8946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25260AD1F14DB46002C8946 /* HJTimeLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTimeLineCell.h; sourceTree = "<group>"; };
+		D25260AE1F14DB46002C8946 /* HJTimeLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTimeLineCell.m; sourceTree = "<group>"; };
+		D25260B01F15EBCB002C8946 /* HJTimeLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTimeLineModel.h; sourceTree = "<group>"; };
+		D25260B11F15EBCB002C8946 /* HJTimeLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTimeLineModel.m; sourceTree = "<group>"; };
+		D25260B31F1619D2002C8946 /* HJTimeLineHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTimeLineHeader.h; sourceTree = "<group>"; };
+		D25260B41F1619D2002C8946 /* HJTimeLineHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTimeLineHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		D25260781F14DAF8002C8946 /* HJTimeLine */ = {
 			isa = PBXGroup;
 			children = (
+				D25260AC1F14DB16002C8946 /* mainClass */,
 				D252607C1F14DAF8002C8946 /* AppDelegate.h */,
 				D252607D1F14DAF8002C8946 /* AppDelegate.m */,
 				D252607F1F14DAF8002C8946 /* ViewController.h */,
@@ -138,6 +148,19 @@
 				D25260A01F14DAF8002C8946 /* Info.plist */,
 			);
 			path = HJTimeLineUITests;
+			sourceTree = "<group>";
+		};
+		D25260AC1F14DB16002C8946 /* mainClass */ = {
+			isa = PBXGroup;
+			children = (
+				D25260AD1F14DB46002C8946 /* HJTimeLineCell.h */,
+				D25260AE1F14DB46002C8946 /* HJTimeLineCell.m */,
+				D25260B01F15EBCB002C8946 /* HJTimeLineModel.h */,
+				D25260B11F15EBCB002C8946 /* HJTimeLineModel.m */,
+				D25260B31F1619D2002C8946 /* HJTimeLineHeader.h */,
+				D25260B41F1619D2002C8946 /* HJTimeLineHeader.m */,
+			);
+			path = mainClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25260AF1F14DB46002C8946 /* HJTimeLineCell.m in Sources */,
 				D25260811F14DAF8002C8946 /* ViewController.m in Sources */,
 				D252607E1F14DAF8002C8946 /* AppDelegate.m in Sources */,
 				D252607B1F14DAF8002C8946 /* main.m in Sources */,
+				D25260B21F15EBCB002C8946 /* HJTimeLineModel.m in Sources */,
+				D25260B51F1619D2002C8946 /* HJTimeLineHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +542,7 @@
 				D25260A51F14DAF8002C8946 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D25260A61F14DAF8002C8946 /* Build configuration list for PBXNativeTarget "HJTimeLineTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +551,7 @@
 				D25260A81F14DAF8002C8946 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D25260A91F14DAF8002C8946 /* Build configuration list for PBXNativeTarget "HJTimeLineUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +560,7 @@
 				D25260AB1F14DAF8002C8946 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
